@@ -6,5 +6,5 @@
     <fragment
         android:id="@+id/navigation_monster"
         android:name="com.raywenderlich.feedmenav.MonsterFragment"
-        android:label="MonsterFragment" />
+        android:label="@string/monster" />
 </navigation>
