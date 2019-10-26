@@ -32,6 +32,7 @@ package com.raywenderlich.feedmenav
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -42,5 +43,8 @@ class MainActivity : AppCompatActivity() {
 
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
+        val navController = findNavController(R.id.nav_host_fragment)
+
+        
     }
 }
