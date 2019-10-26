@@ -12,7 +12,7 @@
         android:name="com.raywenderlich.feedmenav.SlugFragment"
         android:label="@string/slug" />
     <fragment
-        android:id="@+id/pizzaFragment"
+        android:id="@+id/navigation_pizza"
         android:name="com.raywenderlich.feedmenav.PizzaFragment"
-        android:label="PizzaFragment" />
+        android:label="@string/pizza" />
 </navigation>
