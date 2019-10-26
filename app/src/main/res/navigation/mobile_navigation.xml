@@ -8,7 +8,7 @@
         android:name="com.raywenderlich.feedmenav.MonsterFragment"
         android:label="@string/monster" />
     <fragment
-        android:id="@+id/slugFragment"
+        android:id="@+id/navigation_slug"
         android:name="com.raywenderlich.feedmenav.SlugFragment"
-        android:label="SlugFragment" />
+        android:label="@string/slug" />
 </navigation>
