@@ -47,20 +47,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val navView: BottomNavigationView = findViewById(R.id.nav_view)
-
-        val navController = findNavController(R.id.nav_host_fragment)
-
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.navigation_monster,
-                R.id.navigation_slug,
-                R.id.navigation_pizza,
-                R.id.navigation_cake
-            )
+        navigator = BottomNavigator.onCreate(
+            fragmentContainer = R.id.fragment_container,
+            bottomNavigationView = findViewById(R.id.nav_view),
+            rootFragmentsFactory = mapOf(
+                R.id.navigation_monster to { MonsterFragment() },
+                R.id.navigation_slug to { SlugFragment() }
+            ),
+            defaultTab = R.id.navigation_monster,
+            activity = this
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
-
     }
 }
