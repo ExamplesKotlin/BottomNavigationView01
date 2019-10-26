@@ -37,8 +37,11 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.pandora.bottomnavigator.BottomNavigator
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var navigator: BottomNavigator
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
