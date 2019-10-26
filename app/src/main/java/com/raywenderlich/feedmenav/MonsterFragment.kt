@@ -35,8 +35,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.navOptions
+import com.pandora.bottomnavigator.BottomNavigator
 import kotlinx.android.synthetic.main.fragment_monster.*
 
 class MonsterFragment : Fragment() {
@@ -62,7 +62,8 @@ class MonsterFragment : Fragment() {
         }
 
         feedMePizza.setOnClickListener {
-            findNavController().navigate(R.id.navigation_pizza, null, options)
+            val navigator = BottomNavigator.provide(activity!!)
+            navigator.addFragment(PizzaFragment())
         }
     }
 }
