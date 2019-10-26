@@ -11,7 +11,11 @@
     <fragment
         android:id="@+id/navigation_slug"
         android:name="com.raywenderlich.feedmenav.SlugFragment"
-        android:label="@string/slug" />
+        android:label="@string/slug" >
+        <action
+            android:id="@+id/action_navigation_slug_to_navigation_code"
+            app:destination="@id/navigation_code" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_pizza"
         android:name="com.raywenderlich.feedmenav.PizzaFragment"
