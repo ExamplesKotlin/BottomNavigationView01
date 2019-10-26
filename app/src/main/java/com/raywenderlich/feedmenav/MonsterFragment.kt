@@ -62,7 +62,7 @@ class MonsterFragment : Fragment() {
         }
 
         feedMePizza.setOnClickListener {
-            findNavController().navigate(R.id.navigation_pizza, null)
+            findNavController().navigate(R.id.navigation_pizza, null, options)
         }
     }
 }
