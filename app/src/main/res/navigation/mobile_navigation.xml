@@ -13,7 +13,7 @@
         android:name="com.raywenderlich.feedmenav.SlugFragment"
         android:label="@string/slug" >
         <action
-            android:id="@+id/action_navigation_slug_to_navigation_code"
+            android:id="@+id/action_cake"
             app:destination="@id/navigation_code" />
     </fragment>
     <fragment
