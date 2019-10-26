@@ -14,7 +14,7 @@
         android:label="@string/slug" >
         <action
             android:id="@+id/action_cake"
-            app:destination="@id/navigation_code"
+            app:destination="@id/navigation_cake"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
@@ -25,7 +25,7 @@
         android:name="com.raywenderlich.feedmenav.PizzaFragment"
         android:label="@string/pizza" />
     <fragment
-        android:id="@+id/navigation_code"
+        android:id="@+id/navigation_cake"
         android:name="com.raywenderlich.feedmenav.CakeFragment"
         android:label="@string/cake" />
 </navigation>
