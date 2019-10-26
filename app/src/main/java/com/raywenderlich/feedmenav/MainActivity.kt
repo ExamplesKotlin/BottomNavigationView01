@@ -32,11 +32,6 @@ package com.raywenderlich.feedmenav
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.pandora.bottomnavigator.BottomNavigator
 
 class MainActivity : AppCompatActivity() {
@@ -58,4 +53,11 @@ class MainActivity : AppCompatActivity() {
             activity = this
         )
     }
+
+    override fun onBackPressed() {
+        if (!navigator.pop()) {
+            super.onBackPressed()
+        }
+    }
+
 }
