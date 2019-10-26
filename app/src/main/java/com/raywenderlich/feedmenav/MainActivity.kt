@@ -35,6 +35,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -49,10 +50,14 @@ class MainActivity : AppCompatActivity() {
 
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_monster, R.id.navigation_slug, R.id.navigation_pizza, R.id.navigation_cake
+                R.id.navigation_monster,
+                R.id.navigation_slug,
+                R.id.navigation_pizza,
+                R.id.navigation_cake
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
+        
 
     }
 }
