@@ -17,7 +17,7 @@
         android:name="com.raywenderlich.feedmenav.PizzaFragment"
         android:label="@string/pizza" />
     <fragment
-        android:id="@+id/cakeFragment"
+        android:id="@+id/navigation_code"
         android:name="com.raywenderlich.feedmenav.CakeFragment"
-        android:label="CakeFragment" />
+        android:label="@string/cake" />
 </navigation>
